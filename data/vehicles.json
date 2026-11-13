@@ -3,9 +3,9 @@
     "name": "Honda Civic Ex",
     "type": "Sedan",
     "year": "2003",
-    "transmission": "Manual ",
+    "transmission": "Manual",
     "fuel": "Gas",
     "image": "/images/1000927000.jpg",
     "status": "available"
-  },
+  }
 ]

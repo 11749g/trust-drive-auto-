@@ -1,0 +1,50 @@
+media:
+  input: images
+  output: /images
+  extensions: [jpg, jpeg, png, webp]
+  categories: [image]
+  rename: safe
+
+content:
+  - name: vehicles
+    label: Vehicle inventory
+    type: file
+    path: data/vehicles.json
+    format: json
+    list: true
+    fields:
+      - name: name
+        label: Vehicle name
+        type: string
+        required: true
+      - name: type
+        label: Vehicle type
+        type: select
+        options:
+          values:
+            - SUV
+            - Sedan
+            - Truck
+            - Coupe
+            - Hatchback
+            - Van
+      - name: year
+        label: Year
+        type: string
+      - name: transmission
+        label: Transmission
+        type: string
+      - name: fuel
+        label: Fuel / drivetrain
+        type: string
+      - name: image
+        label: Vehicle photo
+        type: image
+        required: true
+      - name: status
+        label: Availability
+        type: select
+        options:
+          values:
+            - available
+            - sold

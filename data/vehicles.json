@@ -5,6 +5,7 @@
     "year": "2003",
     "transmission": "Manual",
     "fuel": "Gas",
+    "price": 3000,
     "image": "/images/1000927000.jpg",
     "status": "available"
   }
